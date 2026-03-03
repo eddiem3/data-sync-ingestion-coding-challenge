@@ -1,6 +1,6 @@
 #!/bin/bash
 # datasync-explore.sh
-API_KEY="${FLOWTEL_API_KEY:?Error: FLOWTEL_API_KEY env variable is not set}"
+API_KEY="${TARGET_API_KEY:?Error: FLOWTEL TARGET_API_KEY env variable is not set}"
 BASE="http://datasync-dev-alb-101078500.us-east-1.elb.amazonaws.com/api/v1"
 OUT="$(dirname "$0")/api-responses"
 mkdir -p "$OUT"
